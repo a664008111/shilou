@@ -1,0 +1,108 @@
+html,body,div,p,table,tr,th,td,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,form,input,select,textarea,span,b,strong,i,em,u,img,a,*{margin: 0; padding: 0;}
+html{font-family:"微软雅黑","Helvertical" ; font-size-adjust:100% ; font-size:62.5%; height:100%;}
+body{ font-size: 1.4rem; color:#333; height:100%;}
+article,section,main,head,nav,aside,footer,figure,figcaption,hgroup,address,dialog,details,summary{ display: block;}
+time,mark,ruby,rp,rt,cite,output{ display:inline;}
+audio,video,canvas,datalist{ display:inline-block;}
+a{ text-decoration: none; color:#444;}
+a:hover{ color:#555;}
+ul,ol,li{ list-style: none;}
+table{ border-spacing: 0; border-collapse: collapse;}
+img{ border:none; vertical-align:middle;}
+input,select,textarea{ vertical-align:middle;}
+h1,h2,h3,h4,h5,h6{ font-size: 1.4rem;}
+.clear{ clear:both; height:0;width:0; overflow:hidden;}
+.AboutUs{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px 80px;
+}
+.abou{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+.abou h2{
+    width: 100%;
+    height: 220px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 28px;
+    border:1px solid #ccc;
+    background: url("../../../static/login.jpg") no-repeat center;
+    background-size:cover;  
+}
+.abou h2 li{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(left,rgba(255, 255, 255, .4),rgba(0, 0, 0, .6));
+    transition: all 2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cons-list p{
+    width: 100%;
+    height: 100px;
+    color:#000;
+    font-size: 18px;
+    text-indent: 2em;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+.abou h2 li b{
+    color:#F8DB26;
+}
+.abou h2 span{
+    width: 340px;
+    display: inline-block;
+    margin-top:20px; 
+    height: 100px;
+    position: relative;
+    z-index: 998;
+    background: url("../../../static/false.png") no-repeat 0px -218px;
+    background-size:cover; 
+}
+.abou h2 span b{
+    width: 100px;
+    height: 40px;
+    color:#F8DB26;
+    font-size: 20px;
+}
+.absou-list{
+    width: 100%;
+    height: 370px;
+}
+.absou-list h1{
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom:2px solid #0070C0;
+    font-size: 20px;
+    font-weight: normal;
+    color:#0070C0;
+}
+.absou-list h1 i,.absou-list p b{
+    color:#0070C0;
+}
+.absou-list p{
+    width: 100%;
+    border-top:1px solid #ccc;
+    height: 300px;
+    text-indent: 2em;
+    line-height: 74px;
+    font-size: 18px;
+    border-bottom:1px solid #ccc;
+    padding: 20px 0;
+}
+.absou-list p span{
+    width: 300px;
+    float: left;
+    height: 200px;
+    background: url("../../../static/abou.png") no-repeat center;
+    background-size:cover; 
+    overflow: hidden;
+    margin-right:20px;
+}

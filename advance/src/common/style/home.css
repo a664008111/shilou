@@ -1,0 +1,226 @@
+html,body,div,p,table,tr,th,td,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,form,input,select,textarea,span,b,strong,i,em,u,img,a,*{margin: 0; padding: 0;}
+html{font-family:"微软雅黑","Helvertical" ; font-size-adjust:100% ; font-size:62.5%; height:100%;}
+body{ font-size: 1.4rem; color:#333; height:100%;}
+article,section,main,head,nav,aside,footer,figure,figcaption,hgroup,address,dialog,details,summary{ display: block;}
+time,mark,ruby,rp,rt,cite,output{ display:inline;}
+audio,video,canvas,datalist{ display:inline-block;}
+a{ text-decoration: none; color:#444;}
+a:hover{ color:#555;}
+ul,ol,li{ list-style: none;}
+table{ border-spacing: 0; border-collapse: collapse;}
+img{ border:none; vertical-align:middle;}
+input,select,textarea{ vertical-align:middle;}
+h1,h2,h3,h4,h5,h6{ font-size: 1.4rem;}
+.clear{ clear:both; height:0;width:0; overflow:hidden;}
+html,body,#app,.home{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.home{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    /* overflow: hidden; */
+    position: relative;
+}
+.home h4{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding-right: 80px;
+}
+.home h4 p{
+    flex-basis: 400px;
+    padding-left: 40px;
+    position: relative;
+    transition: all .5s;
+}
+.home h4 p.active{
+    flex-basis: 200px;
+    position: relative;
+    top:0;
+    left:0;
+    transition: all .5s;
+}
+.home h4 p img.active{
+    width: 20%;
+    position: fixed;
+    top:-78px;
+    left:-64px;
+    transition: all .5s;
+    z-index: 999;
+}
+.home h4 p img{
+    width: 100%;
+    position: absolute;
+    bottom:-166px;
+    left:-44px;
+    transition: all .5s;
+}
+.home h4 span{
+    font-size: 16px;
+    cursor: pointer;
+}
+.home h4 span:hover{
+    color:red;
+}
+.home h4 li{
+    flex:1;
+    font-size: 26px;
+    color:#0070C0;
+    transition: all 3s;
+}
+.home h4 li em{
+    font-size: 30px;
+    color:#CCCCCC;
+}
+.home h4 span i{
+    font-size: 40px;
+    color:#0070C0;
+}
+.home h4 span b{
+    font-size: 18px;
+    color:#0070C0;
+}
+.home .pop{
+    position: absolute;
+    top:16.5%;
+    right:6%;
+    z-index: 10000;
+}
+.home .pop.active{
+    position: fixed;
+    top:1%;
+    right:7%;
+}
+header{
+    width: 100%;
+    height: 50px;
+    background: #2B2B2B;
+    box-sizing: border-box;
+    padding: 0 80px;  
+}
+header.active{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 999;
+    padding: 0 200px;
+    background: linear-gradient(left,#222,#0070C0);
+    transition: all 1s;
+}
+header .ho_nav ul.active{
+    width: 100px;
+}
+header .ho_nav{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 10000;
+}
+header .ho_nav ul{
+    width: 140px;
+    float: left;
+    text-align: center;
+    height: 100%;
+    line-height: 50px;
+    margin-right: 50px;
+}
+header .ho_nav ul a li{
+    font-size: 16px;
+    color:#fff;
+    width: 100%;
+    height: 100%;
+    transition: .5s linear;
+}
+header .ho_nav ul a li:hover{
+    background: #0070C0;
+    transition: .4s linear;   
+}
+header .ho_nav ul a li.active{
+    background: linear-gradient(left,#444,#0070C0);
+    transition: .5s linear;
+    box-shadow: 0 0 15px #fff;
+}
+section{
+    width: 100%;
+    height: auto;
+}
+footer{
+    width: 100%;
+    height: 300px;
+    background: #222;
+    box-sizing: border-box;
+    padding: 80px;
+}
+.foot-left,.foot-con{
+    float: left;
+}
+.foot-left{
+    width: 32%;
+    height: 100%;
+}
+.foot-left dl{
+    display: flex;
+}
+.foot-left dl dt{
+    flex-basis: 170px;
+}
+.foot-left dl dd{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:  0 10px;
+}
+.foot-left dl dd li{
+    font-size: 30px;
+    color:#0070C0;
+}
+.foot-left dl dd li em{
+    font-size: 28px;
+    color:#CCCCCC;
+}
+.foot-left dl dd li:hover em{
+    color:#F8DB26;
+    cursor: pointer;
+}
+.foot-left dl dd b{
+    font-size: 16px;
+    color:#CCCCCC;
+}
+.foot-con{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.foot-con li{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #ccc;
+    height: 140px;
+    text-align: center;
+}
+.foot-con li span{
+    color:#ccc;
+    font-size: 16px;
+    cursor: pointer;
+}
+.foot-con li span:hover{
+    color:#F8DB26;
+}
+.foot-con li span:nth-child(1){
+    padding: 30px 0;
+}
+.foot-con li:nth-child(2){
+    border-right: 1px solid #ccc;
+}
+.foot-right{
+    flex:1;
+    float: right;
+}
